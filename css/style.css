@@ -1,0 +1,94 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(238, 238, 238);
+}
+
+.slider-wrapper {
+    width: 800px;
+    height: 480px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+ .slider-items .slider-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+ .slider-controls span {
+    cursor: pointer;
+    position: absolute;
+    top: 42%;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #303030;
+    background: #ffffffaf;
+    transition: .3s ease;
+}
+
+ .slider-controls span:hover {
+    color: #000;
+    background: #fff;
+}
+
+ .slider-controls .prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+ .slider-controls .next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+ .slider-indicators {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+ .slider-indicators span {
+    cursor: pointer;
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+ .slider-content {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+ .slider-content h3 {
+    position: absolute;
+    bottom: 36px;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: .4s;
+}

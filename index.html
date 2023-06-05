@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>image slider</title>
+
+		<!-- BoxIcons ofline -->
+		<link rel="stylesheet" href="./icons/css/boxicons.css" />
+		<!-- CSS  -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="slider-wrapper">
+			<div class="slider-items">
+				<img class="slider-item" src="images/2b.jpeg" alt="..." />
+				<img class="slider-item" src="images/1a.jpeg" alt="..." />
+				<img class="slider-item" src="images/3c.jpeg" alt="..." />
+			</div>
+
+			<div class="slider-controls">
+				<span class="bx bxs-chevron-left prev" onclick="arrowcontrol(-1)"></span>
+				<span class="bx bxs-chevron-right next" onclick="arrowcontrol(1)"></span>
+			</div>
+
+			<div class="slider-indicators">
+				<span onclick="moveslideto(1)"></span>
+				<span onclick="moveslideto(2)"></span>
+				<span onclick="moveslideto(3)"></span>
+			</div>
+
+			<div class="slider-content">
+				<h3>Ocean View</h3>
+				<h3>Sunset View</h3>
+				<h3>Mountain</h3>
+			</div>
+		</div>
+
+	
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
